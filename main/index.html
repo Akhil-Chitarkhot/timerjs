@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+
+    <div class="flex items-center justify-center min-h-screen">
+        <div class="card bg-neutral text-neutral-content w-96">
+            <div class="card-body items-center text-center space-y-2">
+                <h2 class="card-title">Timer</h2>
+                <span class="countdown font-mono text-2xl">
+                    <span id="minutes" style="--value:${counter}"></span>
+                    :
+                    <span id="seconds" style="--value:${counter};"></span>
+                  </span>
+                <div class="card-actions justify-end">
+                    <button class="btn btn-primary" onclick="startTimer()">Start</button>
+                    <button class="btn btn-primary" onclick="stopTimer()">Stop</button>
+                    <button class="btn btn-primary" onclick="restartTimer()">Restart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
